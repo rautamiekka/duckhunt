@@ -1,6 +1,4 @@
-import os, sys
-import pygame
-import driver
+import os, sys, pygame, driver
 from driver import Driver
 
 SCREEN_WIDTH, SCREEN_HEIGHT = 800, 500
