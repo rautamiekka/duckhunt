@@ -100,10 +100,7 @@ class Driver(object):
         for i in range(10):
             x = startingX + (19 * i)
             y = startingY
-            if self.hitDucks[i]:
-                self.surface.blit(self.controlImgs, (x, y), HIT_DUCK_RED_RECT)
-            else:
-                self.surface.blit(self.controlImgs, (x, y), HIT_DUCK_WHITE_RECT)
+            self.surface.blit(self.controlImgs, (x, y), HIT_DUCK_RED_RECT if self.hitDucks[i] else HIT_DUCK_WHITE_RECT)
 
         # Show the score
         self.surface.blit(self.controlImgs, SCORE_POSITION, SCORE_RECT)
