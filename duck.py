@@ -94,9 +94,7 @@ class Duck(object):
         frameX, frameY = FRAME_SIZE
 
         # If shot was outside the duck image
-        if x2 < x1 or x2 > (x1 + frameX):
-            return False
-        if y2 < y1 or y2 > (y1 + frameY):
+        if (x2 < x1 or x2 > (x1 + frameX)) or (y2 < y1 or y2 > (y1 + frameY)):
             return False
 
         # Prepare for the fall
