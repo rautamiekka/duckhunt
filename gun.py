@@ -1,5 +1,4 @@
-import os, sys
-import pygame
+import os, sys, pygame
 
 SHOT_BG_POSITION = 60, 440
 SHOT_POSITION = 60, 440
