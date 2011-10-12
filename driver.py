@@ -1,6 +1,4 @@
-import os, sys, time
-import pygame
-import gun, duck
+import os, sys, time, pygame, gun, duck
 from gun import Gun
 from duck import Duck
 
